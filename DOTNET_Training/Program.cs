@@ -16,7 +16,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 
-//register db context
+// register db context as a service
 builder.Services.AddDbContext<DataContext>();
 
 var app = builder.Build();
